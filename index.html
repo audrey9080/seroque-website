@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seroque | Empowering PhD Students</title>
+    <title>Seroque | Learning Optimized</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -30,9 +30,9 @@
         }
 
         .logo img {
-            height: 400px;        /* Increased from 120px for more vertical presence */
+            height: 400px;
             width: auto;
-            max-width: 150%;      /* Stretches width by 25% */
+            max-width: 150%;
             display: block;
         }
 
@@ -64,8 +64,13 @@
             margin-bottom: 3rem;
         }
 
-        h1, h2 {
-            color: #6f0a88;
+        /* Gradient headings */
+        h1, h2, h3 {
+            background: linear-gradient(to right, #c084fc 0%, #6f0a88 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
         }
 
         img {
@@ -101,21 +106,28 @@
 
         .feature-box h3 {
             margin: 0;
-            color: #569cd6;
+            background: linear-gradient(to right, #8761ac 0%, #6f0a88 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
         }
 
         .download-btn {
-            background-color: #6f0a88;
+            background: linear-gradient(to right, #875eaf 0%, #6f0a88 100%);
             color: white;
             border: none;
             padding: 0.75rem 1.5rem;
             border-radius: 5px;
             cursor: pointer;
             font-size: 1rem;
+            transition: box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(111,10,136,0.10);
         }
 
         .download-btn:hover {
-            background-color: #7a1b99;
+            box-shadow: 0 4px 16px rgba(153, 100, 206, 0.15);
+            background: linear-gradient(to right, #7e609c 0%, #6f0a88 100%);
         }
     </style>
 </head>
@@ -126,8 +138,8 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="Pomodoro Clock.html">Pomodoro Clock</a></li>
                 <li><a href="Theta Waves.html">Theta Waves</a></li>
-                <li><a href="#sleep">Polyphasic Sleep</a></li>
-            </ul>\
+                <li><a href="polyphasic-sleep.html">Polyphasic Sleep</a></li>
+            </ul>
         </nav>
         <button class="download-btn">Download</button>
     </header>
@@ -138,20 +150,22 @@
         </div>
         <section class="hero">
             <h1>Learning optimized</h1>
-            <p>Seroque is a digital toolkit crafted for PhD students across every discipline. Whether you're conducting fieldwork, writing your thesis, or navigating burnout, Seroque gives you the structure and space to stay balanced, focused, and effective.</p>
-            <p>We combine cognitive wellness, productivity methods, and real academic insight into one streamlined experience. Seroque isn't just an app — it's your academic co-pilot.</p>
+            <p>Seroque is a Educational tool built for students, by students. We live in an age where there is a vast amount of information out there, but it feels impossible to truly filter out the good information and the useless knowledge. That's where Seroque comes in, We are here to help you achieve your goals, and hit deadlines, all while helping you study, and stay caught up in whichever classes or topics you choose to learn or take.
+
+We will provide tools to help with ADHD using check lists, philosophy, and detailed graphs of personal achievement, all while providing flashcard generators, research paper summarizers, visual representations of neuroreceptor interactions and more.</p>
+            <p>Using Neuroscience We combine cognitive wellness, productivity methods, and real academic insight into one streamlined experience. Seroque isn't just an app — it's your academic co-pilot.</p>
         </section>
 
         <section id="pomodoro">
             <h2>Deep Focus with Pomodoro</h2>
             <img src="Pomodoro concept.png" alt="Pomodoro Timer">
-            <p>Structure your sessions with intention using the Pomodoro technique. Seroque's timer helps you break complex work into high-efficiency sprints with mindful rest intervals, tailored to the rhythms of research work.</p>
+            <p>Structure your sessions with intention using the Pomodoro technique. Seroque's timer helps you break complex work into high-efficiency sprints with mindful rest intervals, in order to increase the likelyhood of the brain intering a flow state.</p>
         </section>
 
         <section id="theta">
-            <h2>Reset Your Mind with Theta Waves</h2>
+            <h2>Enter a Flow state</h2>
             <img src="thetawaves.webp" alt="Theta Brain Waves Visualization">
-            <p>Tap into curated audio designed to promote calm, creativity, and mental reset. Perfect for winding down, ideating, or building mental resilience during high-stress phases of your program.</p>
+            <p>Tap into curated audio designed to promote calm, creativity, and mental reset. Perfect for winding down, or entering a perfect flow state while working</p>
         </section>
 
         <section id="sleep">
@@ -184,7 +198,9 @@
                 </a>
             </div>
             <div class="feature-box">
-                <h3>Polyphasic Sleep</h3>
+                <a href="polyphasic-sleep.html" style="text-decoration:none; color:inherit;">
+                    <h3>Polyphasic Sleep</h3>
+                </a>
             </div>
             <div class="feature-box">
                 <a href="Theta Waves.html" style="text-decoration:none; color:inherit;">
